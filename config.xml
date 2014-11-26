@@ -1,0 +1,80 @@
+<config>
+<target>
+	<pre>
+		<sh>
+			echo 'PRE.sh'
+		</sh>
+		<st>	
+			Transcript show: 'PRE.st'.
+		</st>
+	</pre>
+	<analysis>
+		<st>
+			content
+		</st>
+		<sh>
+			content
+		</sh>
+	</analysis>
+	<post>
+		<sh>
+			echo 'post.sh'
+		</sh>
+		<st>	
+			Transcript show: 'post.st'.
+		</st>
+	</post>
+</target>
+<target>
+	<pre>
+		<sh>
+			echo 'PRE.sh'
+		</sh>
+		<st>
+			Transcript show: 'PRE.st'.
+		</st>
+	</pre>
+	<analysis>
+		<st>
+			content
+		</st>
+		<sh>
+			content
+		</sh>
+	</analysis>
+	<post>
+		<sh>
+			echo 'post.sh'
+		</sh>
+		<st>	
+			Transcript show: 'post.st'.
+		</st>
+	</post>
+</target>
+<target>
+	<pre>
+		<sh>
+			echo 'PRE.sh'
+		</sh>
+		<st>
+			Transcript show: 'PRE.st'.
+		</st>
+	</pre>
+	<analysis>
+		<st>
+			content
+		</st>
+		<sh>
+			content
+		</sh>
+	</analysis>
+	<post>
+		<sh>
+			echo 'post.sh'
+		</sh>
+		<st>	
+			Transcript show: 'post.st'.
+		</st>
+	</post>
+</target>
+</config>
