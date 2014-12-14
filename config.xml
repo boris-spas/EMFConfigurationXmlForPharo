@@ -1,80 +1,15 @@
 <config>
 <target>
 	<pre>
-		<sh>
-			echo 'PRE.sh'
-		</sh>
-		<st>	
-			Transcript show: 'PRE.st'.
+		<!-- load object repo analysis -->
+		<st>
+			Gofer new url: 'http://smalltalkhub.com/mc/spasojev/ObjectRepoGatherer/main/';package: 'ConfigurationOfObjectRepoGatherer'; load.(Smalltalk at: #ConfigurationOfObjectRepoGatherer) loadDevelopment.
 		</st>
 	</pre>
 	<analysis>
 		<st>
-			Transcript cr;cr;cr. EMFUtils projectClasses size.	
+			ObjectRepoDataGatherer new emfPoweredAnalysis.
 		</st>
-		<sh>
-			
-		</sh>
 	</analysis>
-	<post>
-		<sh>
-			echo 'post.sh'
-		</sh>
-		<st>	
-			Transcript show: 'post.st'.
-		</st>
-	</post>
-</target>
-<target>
-	<pre>
-		<sh>
-			echo 'PRE.sh'
-		</sh>
-		<st>
-			Transcript show: 'PRE.st'.
-		</st>
-	</pre>
-	<analysis>
-		<st>
-			Transcript cr;cr;cr. EMFUtils projectClasses size.	
-		</st>
-		<sh>
-			
-		</sh>
-	</analysis>
-	<post>
-		<sh>
-			echo 'post.sh'
-		</sh>
-		<st>	
-			Transcript show: 'post.st'.
-		</st>
-	</post>
-</target>
-<target>
-	<pre>
-		<sh>
-			echo 'PRE.sh'
-		</sh>
-		<st>
-			Transcript show: 'PRE.st'.
-		</st>
-	</pre>
-	<analysis>
-		<st>
-			Transcript cr;cr;cr. EMFUtils projectClasses size.	
-		</st>
-		<sh>
-			
-		</sh>
-	</analysis>
-	<post>
-		<sh>
-			echo 'post.sh'
-		</sh>
-		<st>	
-			Transcript show: 'post.st'.
-		</st>
-	</post>
 </target>
 </config>
