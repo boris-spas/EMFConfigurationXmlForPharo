@@ -11,5 +11,12 @@
 			ObjectRepoDataGatherer new emfPoweredAnalysis.
 		</st>
 	</analysis>
+	<post>
+		<sh>
+			echo "db = db.getSiblingDB('objectRepo');db.objectRepo.ensureIndex({snippet: 1}, {unique: true, dropDups: true});" > OR-after.js
+			mongo OR-after.js
+			rm OR-after.js
+		</sh>
+	</post>
 </target>
 </config>
