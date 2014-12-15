@@ -3,7 +3,7 @@
 	<pre>
 		<!-- load object repo analysis -->
 		<st>
-			Gofer new url: 'http://smalltalkhub.com/mc/spasojev/ObjectRepoGatherer/main/';package: 'ConfigurationOfObjectRepoGatherer'; load.(Smalltalk at: #ConfigurationOfObjectRepoGatherer) loadDevelopment.
+			Gofer new url: 'http://smalltalkhub.com/mc/spasojev/ObjectRepoGatherer/main/';package: 'ConfigurationOfObjectRepoGatherer'; load.(Smalltalk at: #ConfigurationOfObjectRepoGatherer) loadDevelopment.Author fullName: 'me'.
 		</st>
 	</pre>
 	<analysis>
