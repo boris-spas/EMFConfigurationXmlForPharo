@@ -8,7 +8,7 @@
 		</pre>
 		<analysis>
 			<st>
-				ObjectRepoDataGatherer new emfPoweredAnalysis.
+				Transcript show: '@@OR-START@@';cr. ObjectRepoDataGatherer new emfPoweredAnalysis.
 			</st>
 		</analysis>
 		<post>
@@ -30,7 +30,7 @@
 		</pre>
 		<analysis>
 			<st>
-				EATIDataCollector new emfPoweredAnalysis.
+				Transcript show: '@@EATI-START@@';cr.EATIDataCollector new emfPoweredAnalysis.
 			</st>
 		</analysis>
 		<post>
