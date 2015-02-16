@@ -8,7 +8,7 @@
 		</pre>
 		<analysis>
 			<st>
-				Transcript show: '@@OR-START@@';cr. ObjectRepoDataGatherer new emfPoweredAnalysis.
+				Author fullName: 'me'. Transcript show: '@@OR-START@@';cr. ObjectRepoDataGatherer new emfPoweredAnalysis.
 			</st>
 		</analysis>
 		<post>
