@@ -16,7 +16,7 @@
 				<![CDATA[
 				LOADED_ON=`cat loadedOn.txt`
 
-				echo "db = db.getSiblingDB('$LOADED_ON');db.objectRepo.ensureIndex({snippet: 1}, {unique: true, dropDups: true});" > OR-after.js
+				echo "db = db.getSiblingDB('objectRepo');db.objectRepo$LOADED_ON.ensureIndex({snippet: 1}, {unique: true, dropDups: true});" > OR-after.js
 				mongo OR-after.js
 				rm OR-after.js
 				]]>
