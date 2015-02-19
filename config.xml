@@ -15,8 +15,13 @@
 			<sh>
 				<![CDATA[
 				LOADED_ON=`cat loadedOn.txt`
-
-				echo "db = db.getSiblingDB('objectRepo');db.objectRepo$LOADED_ON.ensureIndex({snippet: 1}, {unique: true, dropDups: true});" > OR-after.js
+				echo "db = db.getSiblingDB('objectRepo');db.objectRepoT$LOADED_ON.ensureIndex({snippet: 1}, {unique: true, dropDups: true});" > OR-after.js
+				
+				$PERCENT=`echo "\`cat simpleParallelBash/standardOutput/* | grep @@BoriS | wc -l\` * 100 / \`tail -n 1 simpleParallelBash/input.txt\`" | bc`
+				if [[ $PERCENT -ge 80 ]]; then
+  					echo "db.objectRepo.drop(); db.objectRepoT$LOADED_ON.copyTo('objectRepo')" >> OR-after.js
+				fi
+				
 				mongo OR-after.js
 				]]>
 			</sh>
