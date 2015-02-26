@@ -45,7 +45,9 @@
 			<sh>
 				<![CDATA[
 				LOADED_ON=`cat loadedOn.txt`
-				$PERCENT=`echo "\`cat simpleParallelBash/standardOutput/* | grep @@BoriS | wc -l\` * 100 / \`tail -n 1 simpleParallelBash/input.txt\`" | bc`
+				TOTAL=`tail -n 1 simpleParallelBash/input.txt`
+				SUCC=`cat simpleParallelBash/standardOutput/* | grep @@BoriS | wc -l`
+				PERCENT=`echo "$SUCC * 100 / $TOTAL" | bc`
 				if [[ $PERCENT -ge 75 ]]; then
   					echo "db = db.getSiblingDB('EATI');db.EATI.drop(); db.EATIT$LOADED_ON.copyTo('EATI')" > EATI-after.js
 				fi
