@@ -58,4 +58,19 @@
 		</post>
 	</target>
 	<!-- /EATI -->
+
+	<!-- Arguments -->
+	<target>
+		<pre>
+			<st>
+				Gofer new url: 'http://smalltalkhub.com/mc/spasojev/ObjectRepoGatherer/main/';package: 'ConfigurationOfObjectRepoGatherer'; load.(Smalltalk at: #ConfigurationOfObjectRepoGatherer) loadDevelopment.
+			</st>
+		</pre>
+		<analysis>
+			<st>
+				Transcript show: '@@ARG-START@@';cr.ArgumentDataGatherer new emfPoweredAnalysis.
+			</st>
+		</analysis>
+	</target>
+	<!-- /Arguments -->
 </config>
