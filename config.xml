@@ -3,7 +3,7 @@
 	<target>
 		<pre>
 			<st>
-				Gofer new url: 'http://smalltalkhub.com/mc/spasojev/ObjectRepoGatherer/main/';package: 'ConfigurationOfObjectRepoGatherer'; load.(Smalltalk at: #ConfigurationOfObjectRepoGatherer) loadDevelopment.Author fullName: 'me'.
+				Gofer new squeaksource: 'OSProcess';package: 'OSProcess';load. Gofer new	squeaksource: 'CommandShell';	package: 'CommandShell-Piping';	load. Gofer new url: 'http://smalltalkhub.com/mc/spasojev/ObjectRepoGatherer/main/';package: 'ConfigurationOfObjectRepoGatherer'; load.(Smalltalk at: #ConfigurationOfObjectRepoGatherer) loadDevelopment.Author fullName: 'me'.
 			</st>
 		</pre>
 		<analysis>
