@@ -91,4 +91,35 @@
 		</post>
 	</target>
 	<!-- /Arguments -->
+
+
+	<!-- ClassClash -->
+	<target>
+		<pre>
+			<st>
+				Gofer new url: 'http://smalltalkhub.com/mc/spasojev/ClassClash/main/';package: 'ConfigurationOfClassClashBackEnd'; load.(Smalltalk at: #ConfigurationOfClassClashBackEnd) loadDevelopment.
+			</st>
+		</pre>
+		<analysis>
+			<st>
+				Transcript show: '@@CC-START@@';cr. ClassClashDataGatherer new emfPoweredAnalysis.
+			</st>
+		</analysis>
+		<post>
+			<sh>
+				<![CDATA[
+				LOADED_ON=`cat loadedOn.txt`
+				TOTAL=`tail -n 1 simpleParallelBash/input.txt`
+				SUCC=`cat simpleParallelBash/standardOutput/* | grep @@BoriS | wc -l`
+				PERCENT=`echo "$SUCC * 100 / $TOTAL" | bc`
+				if [[ $PERCENT -ge 70 ]]; then
+  					echo "db = db.getSiblingDB('classClash');db.classClash.drop(); db.classClash$LOADED_ON.copyTo('classClash')" > classClash-after.js
+				fi
+				
+				mongo classClash-after.js
+				]]>
+			</sh>
+		</post>
+	</target>
+	<!-- /ClassClash -->
 </config>
