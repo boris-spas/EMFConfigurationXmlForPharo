@@ -28,8 +28,7 @@
 		</post>
 	</target>
 	<!-- /OBJECT REPO -->
-
-	<!-- EATI -->
+	<!--
 	<target>
 		<pre>
 			<st>
@@ -57,9 +56,7 @@
 			</sh>
 		</post>
 	</target>
-	<!-- /EATI -->
 
-	<!-- Arguments -->
 	<target>
 		<pre>
 			<st>
@@ -90,5 +87,5 @@
 			</st>
 		</post>
 	</target>
-	<!-- /Arguments -->
+	 -->
 </config>
