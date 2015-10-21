@@ -22,7 +22,7 @@
   					echo "db.objectRepo.drop(); db.objectRepoT$LOADED_ON.copyTo('objectRepo')" >> OR-after.js
 				fi
 				
-				mongo OR-after.js
+				# mongo OR-after.js
 				]]>
 			</sh>
 		</post>
