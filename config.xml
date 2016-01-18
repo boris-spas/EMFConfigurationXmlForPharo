@@ -60,8 +60,6 @@
  
 	<!-- ARGUMENTS -->
 	<target>
-
-	<target>
 		<pre>
 			<st>
 				Gofer new url: 'http://smalltalkhub.com/mc/spasojev/Arguments/main/';package: 'ConfigurationOfArguments'; load.(Smalltalk at: #ConfigurationOfArguments) loadDevelopment.
