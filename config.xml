@@ -28,7 +28,7 @@
 		</post>
 	</target>
 	<!-- /OBJECT REPO -->
-	<!-- EATI  -->
+	<!-- 
 	<target>
 		<pre>
 			<st>
@@ -56,9 +56,7 @@
 			</sh>
 		</post>
 	</target>
-	<!-- /EATI  -->
  
-	<!-- ARGUMENTS -->
 	<target>
 		<pre>
 			<st>
@@ -89,7 +87,7 @@
 			</st>
 		</post>
 	</target>
-	<!-- /ARGUMENTS -->
+	 -->
 	<!-- CLASS CLASH-->
 	<target>
 		<pre>
