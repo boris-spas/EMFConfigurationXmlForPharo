@@ -97,7 +97,7 @@
 		</pre>
 		<analysis>
 			<st>
-				Transcript show: '@@CC-START@@';cr. ClassClashDataGatherer new emfPoweredAnalysis.
+				Transcript show: '@@CC-START@@';cr. ClassClashDataGatherer new emfAnalysis.
 			</st>
 		</analysis>
 		<post>
